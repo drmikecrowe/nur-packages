@@ -22,5 +22,21 @@
         pkgs = import nixpkgs {inherit system;};
       });
     packages = forAllSystems (system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system});
+    devShells = forAllSystems (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
+    in {
+      default = pkgs.mkShell {
+        name = "flakeShell-${system}";
+        buildInputs = with pkgs; [
+          git
+          alejandra
+          statix
+          nix-prefetch
+          nix-prefetch-scripts
+          nix-tree
+          ripgrep
+        ];
+      };
+    });
   };
 }
