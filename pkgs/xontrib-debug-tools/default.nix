@@ -31,7 +31,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "Debug tools for xonsh shell.";
+    description = "[how-to](https://github.com/drmikecrowe/nur-packages) Debug tools for xonsh shell.";
     homepage = "https://github.com/xonsh/xontrib-debug-tools";
     license = licenses.mit;
     maintainers = [maintainers.greg];

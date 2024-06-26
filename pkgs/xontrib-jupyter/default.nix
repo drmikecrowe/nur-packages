@@ -43,7 +43,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "Xonsh jupyter kernel allows to run Xonsh shell code in Jupyter, JupyterLab, Euporia, etc.";
+    description = "[how-to](https://github.com/drmikecrowe/nur-packages) Xonsh jupyter kernel allows to run Xonsh shell code in Jupyter, JupyterLab, Euporia, etc.";
     homepage = "https://github.com/xonsh/xontrib-jupyter";
     license = licenses.mit;
     maintainers = [maintainers.greg];

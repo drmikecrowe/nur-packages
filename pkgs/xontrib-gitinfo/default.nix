@@ -42,6 +42,6 @@ in
       license = ''
         MIT
       '';
-      description = "xonsh gitinfo";
+      description = "[how-to](https://github.com/drmikecrowe/nur-packages) xonsh gitinfo";
     };
   }

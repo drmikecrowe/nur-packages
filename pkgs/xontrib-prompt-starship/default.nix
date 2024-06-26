@@ -24,6 +24,6 @@ python3.pkgs.buildPythonPackage {
     license = ''
       MIT
     '';
-    description = "xonsh starship xontrib";
+    description = "[how-to](https://github.com/drmikecrowe/nur-packages) xonsh starship xontrib";
   };
 }

@@ -33,7 +33,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "Populate rich completions using fish and remove the default bash based completer";
+    description = "[how-to](https://github.com/drmikecrowe/nur-packages) Populate rich completions using fish and remove the default bash based completer";
     homepage = "https://github.com/xonsh/xontrib-fish-completer";
     license = licenses.mit;
     maintainers = [maintainers.greg];

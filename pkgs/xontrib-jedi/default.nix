@@ -42,7 +42,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "Xonsh Python mode completions using jedi";
+    description = "[how-to](https://github.com/drmikecrowe/nur-packages) Xonsh Python mode completions using jedi";
     homepage = "https://github.com/xonsh/xontrib-jedi";
     license = licenses.mit;
     maintainers = [maintainers.greg];

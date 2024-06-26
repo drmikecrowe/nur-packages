@@ -41,7 +41,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "Dask Distributed integration for Xonsh";
+    description = "[how-to](https://github.com/drmikecrowe/nur-packages) Dask Distributed integration for Xonsh";
     homepage = "https://github.com/xonsh/xontrib-distributed";
     license = licenses.mit;
     maintainers = [maintainers.greg];

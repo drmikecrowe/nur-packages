@@ -33,7 +33,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "Python virtual environment manager for the xonsh shell";
+    description = "[how-to](https://github.com/drmikecrowe/nur-packages) Python virtual environment manager for the xonsh shell";
     homepage = "https://github.com/xonsh/xontrib-vox";
     license = licenses.mit;
     maintainers = [maintainers.greg];

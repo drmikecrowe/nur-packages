@@ -24,6 +24,6 @@ python3.pkgs.buildPythonPackage {
     license = ''
       BSD
     '';
-    description = "xonsh direnv";
+    description = "[how-to](https://github.com/drmikecrowe/nur-packages) xonsh direnv";
   };
 }

@@ -32,7 +32,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "Bash-like interactive mode extensions for the xonsh shell. ";
+    description = "[how-to](https://github.com/drmikecrowe/nur-packages) Bash-like interactive mode extensions for the xonsh shell. ";
     homepage = "https://github.com/xonsh/xontrib-bashisms";
     license = licenses.mit;
     maintainers = [maintainers.greg];
