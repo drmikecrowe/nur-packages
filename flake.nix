@@ -33,6 +33,7 @@
           statix
           nix-prefetch
           nix-prefetch-scripts
+          nix-prefetch-github
           nix-tree
           ripgrep
         ];
