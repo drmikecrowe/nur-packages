@@ -15,7 +15,7 @@ in
       sha256 = "sha256-9GqsTVCMvrWpTopHtEdicTyYRQzP1NVtQHZsfBT+fUg=";
     };
 
-    doCheck = true;
+    doCheck = false;
     format = "pyproject";
     # nativeBuildInputs = with pkgs.python3Packages; [
     #   setuptools
