@@ -17,14 +17,11 @@ in
 
     doCheck = false;
     format = "pyproject";
-    # nativeBuildInputs = with pkgs.python3Packages; [
-    #   setuptools
-    #   poetry-core
-    # ];
-    buildInputs = with pkgs.python3Packages; [
+    build-system = with pkgs.python3Packages; [
       setuptools
       pdm-pep517
       poetry-core
+      pkgs.xonsh
     ];
 
     meta = {
