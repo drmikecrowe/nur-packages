@@ -7,11 +7,22 @@
 #     nix-build -A mypackage
 {pkgs ? import <nixpkgs> {}}: let
   backtrace = pkgs.python3Packages.callPackage ./pkgs/backtrace {};
+  lib = import ./lib {inherit pkgs;}; # functions
 in {
   inherit backtrace;
 
   # The `lib`, `modules`, and `overlays` names are special
-  lib = import ./lib {inherit pkgs;}; # functions
+  lib.maintainers =
+    lib.maintainers
+    // {
+      drmikecrowe = {
+        github = "drmikecrowe";
+        githubId = 90312;
+        name = "Mike Crowe";
+        email = "drmikecrowe@gmail.com";
+        keys = [{fingerprint = "8978 4645 9539 BD9C 18F5  0B5F 6741 8918 CA9B B7B1";}];
+      };
+    };
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
