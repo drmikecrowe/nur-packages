@@ -35,6 +35,6 @@ buildPythonPackage rec {
     description = "[broot](https://github.com/Canop/broot) support function in the [xonsh shell](https://xon.sh).";
     homepage = "https://github.com/jnoortheen/xontrib-broot";
     license = licenses.mit;
-    maintainers = [maintainers.drmikecrowe];
+    # maintainers = [maintainers.drmikecrowe];
   };
 }

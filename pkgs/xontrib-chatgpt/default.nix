@@ -32,6 +32,6 @@ buildPythonPackage rec {
     homepage = "https://github.com/drmikecrowe/xontrib-chatgpt";
     description = "Gives the ability to use ChatGPT directly from the command line in the [xonsh shell](https://xon.sh).";
     license = licenses.mit;
-    maintainers = [maintainers.drmikecrowe];
+    # maintainers = [maintainers.drmikecrowe];
   };
 }

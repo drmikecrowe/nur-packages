@@ -23,7 +23,7 @@ buildPythonPackage rec {
   meta = with lib; {
     homepage = "https://github.com/vaaaaanquish/xontrib-readable-traceback";
     license = licenses.mit;
-    maintainers = [maintainers.drmikecrowe];
+    # maintainers = [maintainers.drmikecrowe];
     description = "Make traceback easier to see for the [xonsh shell](https://xon.sh)..";
   };
 }

@@ -26,7 +26,7 @@ buildPythonPackage rec {
   meta = with lib; {
     homepage = "https://github.com/nir0s/backtrace";
     license = licenses.asl20;
-    maintainers = [maintainers.drmikecrowe];
+    # maintainers = [maintainers.drmikecrowe];
     description = "Makes Python tracebacks human friendly";
   };
 }

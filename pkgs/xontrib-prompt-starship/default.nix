@@ -25,7 +25,7 @@ buildPythonPackage {
   meta = with lib; {
     homepage = "https://github.com/anki-code/xontrib-prompt-starship";
     license = licenses.mit;
-    maintainers = [maintainers.drmikecrowe];
+    # maintainers = [maintainers.drmikecrowe];
     description = "Starship prompt in the [xonsh shell](https://xon.sh).";
   };
 }
