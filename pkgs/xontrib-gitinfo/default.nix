@@ -50,7 +50,7 @@ in
     meta = with lib; {
       homepage = "https://github.com/dyuri/xontrib-gitinfo";
       license = licenses.mit;
-      # maintainers = [maintainers.drmikecrowe];
+      maintainers = [maintainers.drmikecrowe];
       description = "Displays git information on entering a repository folder in the [xonsh shell](https://xon.sh).";
     };
   }

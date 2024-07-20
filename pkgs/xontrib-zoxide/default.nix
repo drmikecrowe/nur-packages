@@ -34,7 +34,7 @@ buildPythonPackage {
   meta = with lib; {
     homepage = "https://github.com/dyuri/xontrib-zoxide";
     license = licenses.mit;
-    # maintainers = [maintainers.drmikecrowe];
+    maintainers = [maintainers.drmikecrowe];
     description = "Zoxide integration in the [xonsh shell](https://xon.sh).";
   };
 }
