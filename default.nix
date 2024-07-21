@@ -25,7 +25,7 @@ in {
   # xontrib-direnv = pkgs.python3Packages.callPackage ./pkgs/xontrib-direnv {};
   # xontrib-distributed = pkgs.python3Packages.callPackage ./pkgs/xontrib-distributed {};
   xontrib-dot-dot = pkgs.python3Packages.callPackage ./pkgs/xontrib-dot-dot {};
-  xontrib-fish-completer = pkgs.python3Packages.callPackage ./pkgs/xontrib-fish-completer {};
+  # xontrib-fish-completer = pkgs.python3Packages.callPackage ./pkgs/xontrib-fish-completer {};
   xontrib-gitinfo = pkgs.python3Packages.callPackage ./pkgs/xontrib-gitinfo {};
   # xontrib-jedi = pkgs.python3Packages.callPackage ./pkgs/xontrib-jedi {};
   # xontrib-jupyter = pkgs.python3Packages.callPackage ./pkgs/xontrib-jupyter {};
