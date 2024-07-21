@@ -6,9 +6,9 @@
 # commands such as:
 #     nix-build -A mypackage
 {pkgs ? import <nixpkgs> {}}: let
-  # backtrace = pkgs.python3Packages.callPackage ./pkgs/backtrace {};
+  backtrace = pkgs.python3Packages.callPackage ./pkgs/backtrace {};
 in {
-  # inherit backtrace;
+  inherit backtrace;
 
   # The `lib`, `modules`, and `overlays` names are special
   lib = import ./lib {inherit pkgs;}; # functions
@@ -27,10 +27,11 @@ in {
   xontrib-dot-dot = pkgs.python3Packages.callPackage ./pkgs/xontrib-dot-dot {};
   xontrib-fish-completer = pkgs.python3Packages.callPackage ./pkgs/xontrib-fish-completer {};
   xontrib-gitinfo = pkgs.python3Packages.callPackage ./pkgs/xontrib-gitinfo {};
+  # TODO: diagnose why jedi fails
   # xontrib-jedi = pkgs.python3Packages.callPackage ./pkgs/xontrib-jedi {};
   xontrib-jupyter = pkgs.python3Packages.callPackage ./pkgs/xontrib-jupyter {};
   xontrib-prompt-starship = pkgs.python3Packages.callPackage ./pkgs/xontrib-prompt-starship {};
-  # xontrib-readable-traceback = pkgs.python3Packages.callPackage ./pkgs/xontrib-readable-traceback {inherit backtrace;};
+  xontrib-readable-traceback = pkgs.python3Packages.callPackage ./pkgs/xontrib-readable-traceback {inherit backtrace;};
   xontrib-sh = pkgs.python3Packages.callPackage ./pkgs/xontrib-sh {};
   xontrib-term-integrations = pkgs.python3Packages.callPackage ./pkgs/xontrib-term-integrations {};
   xontrib-vox = pkgs.python3Packages.callPackage ./pkgs/xontrib-vox {};
