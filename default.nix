@@ -27,7 +27,7 @@ in {
   xontrib-dot-dot = pkgs.python3Packages.callPackage ./pkgs/xontrib-dot-dot {};
   xontrib-fish-completer = pkgs.python3Packages.callPackage ./pkgs/xontrib-fish-completer {};
   xontrib-gitinfo = pkgs.python3Packages.callPackage ./pkgs/xontrib-gitinfo {};
-  xontrib-jedi = pkgs.python3Packages.callPackage ./pkgs/xontrib-jedi {};
+  # xontrib-jedi = pkgs.python3Packages.callPackage ./pkgs/xontrib-jedi {};
   xontrib-jupyter = pkgs.python3Packages.callPackage ./pkgs/xontrib-jupyter {};
   xontrib-prompt-starship = pkgs.python3Packages.callPackage ./pkgs/xontrib-prompt-starship {};
   # xontrib-readable-traceback = pkgs.python3Packages.callPackage ./pkgs/xontrib-readable-traceback {inherit backtrace;};
