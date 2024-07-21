@@ -23,6 +23,8 @@ in
 
     doCheck = false;
 
+    doCheck = false;
+
     nativeBuildInputs = [
       setuptools
       wheel

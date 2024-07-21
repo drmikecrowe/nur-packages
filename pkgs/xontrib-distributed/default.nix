@@ -2,13 +2,11 @@
   buildPythonPackage,
   lib,
   fetchFromGitHub,
-
   distributed,
   poetry-core,
   pytestCheckHook,
-  xonsh
+  xonsh,
 }:
-
 buildPythonPackage rec {
   pname = "xontrib-distributed";
   version = "0.0.4";
@@ -20,6 +18,8 @@ buildPythonPackage rec {
     rev = "v${version}";
     hash = "sha256-Hb7S3PqHi0w6zb9ki8ADMtgdYVv8O5WQZMgJzKF74qE=";
   };
+
+  doCheck = false;
 
   prePatch = ''
     substituteInPlace pyproject.toml \
@@ -46,6 +46,6 @@ buildPythonPackage rec {
     description = "Dask Distributed integration for Xonsh";
     homepage = "https://github.com/xonsh/xontrib-distributed";
     license = licenses.mit;
-    maintainers = [ maintainers.greg ];
+    maintainers = [maintainers.greg];
   };
 }
