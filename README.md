@@ -44,7 +44,7 @@ in {
   config = lib.mkIf (cfg.enable) {
     programs.xonsh = with xonsh-xontribs; {
       enable = true;
-      package = xonsh-wrapper.override {
+      package = xonsh-wrapped.override {
         xonsh = xonsh;
         extraPackages = ps: [
           xontrib-direnv
