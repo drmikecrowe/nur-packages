@@ -5,13 +5,13 @@
 }:
 buildPythonPackage rec {
   pname = "xontrib-superfile";
-  version = "0.0.4";
+  version = "0.0.5";
 
   src = pkgs.fetchFromGitHub {
     owner = "TechnoStrife";
     repo = "xontrib-superfile";
-    rev = "acca97967bb29d5051dbe236a375a85293e06875";
-    sha256 = "sha256-bVn+2264xPupI/Bm4eSfCOmIxsR6bcbVlJEgWD1o2oI=";
+    rev = "09b8cfa1eda367a3ae0f462a6d9269df61231b59";
+    sha256 = "sha256-ztaK99wHnVNp/rLeJZ1GA7plLKod07fylZTsQUpNpQw=";
   };
 
   doCheck = false;
